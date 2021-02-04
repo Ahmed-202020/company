@@ -5,7 +5,7 @@ $custom-color:#eee;
     src: url(../fonts/Cairo-Regular.ttf);
 }
 body{
-    font-family: "cairofont , Cambria , Cochin , Georgia , Times New Roman , Self";
+    font-family: "cairofont";
     font-size: 20px;
 }
 html,body{
@@ -241,6 +241,76 @@ html,body{
                     }
                 } 
             }
+        }
+    }
+}
+
+footer{
+    background-color: #393939;
+    h2{
+        color: $custom-color;
+       font-size: 150%;
+    }
+    .line1{
+       width: 5%;
+       border-top:3px solid $custom-color ;
+    }
+    #footer-links{
+        a{
+            text-decoration: none;
+            color: #bbbbbb;
+            margin: 0 15px;
+            font-size: 90%;
+            transition-property: $custom-color;
+            transition-duration: .3s;
+          &:hover,
+          &:focus{
+              color: $custom-color;
+          }
+        }
+    }
+    .line2{
+        border-top: 3px solid $custom-color;
+        width: 60%;
+    }
+        #news-letter{
+            .form{
+            margin-left: 48px;
+            margin-right: 48px;
+            input{
+                background-color: #202020;
+                border-radius: 1px;
+                border: none;
+                &:focus{
+                    background-color: #202020;
+                    border-color: $custom-color;
+                    box-shadow: 0 0 2px $custom-color;
+                    color: $custom-color;
+                }
+            }
+            .btn-light{
+                &:hover,
+                &:focus{
+                    color: $custom-color;
+                    background-color: #363636;
+                    border: 1px solid $custom-color;
+                    transition-property: color border background-color;
+                    transition-duration: .3s;
+
+                }
+            }
+        }
+    }
+    .copyright{
+        color: #969696;
+        font-size: 90%;
+        font-weight: bold;
+    }
+    .copyright-link{
+        text-decoration: none;
+        &:hover,
+        &:focus{
+            color: $custom-color;
         }
     }
 }
