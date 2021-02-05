@@ -1,0 +1,38 @@
+@import "./variable";
+.banner{
+    #banner-img{
+        background-image: url(../images/projects-banner.jpg);
+        background-position: 50% 10%;
+        background-repeat: no-repeat;
+        height: 250px;
+        .overlay{
+            background-color: rgba(65 , 155 , 155 , 0.5);
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .title1{
+                font-weight: bold;
+                color: white;
+            }
+        }
+    }
+}
+.our-works{
+    .custom-btn2{
+        font-weight: bold;
+        color: #363636;
+        background-color: white;
+        border: none;
+        position: absolute;
+        border-radius: 1px;
+        right: 25px;
+        top: 20px;
+        &:hover,
+        &:focus{
+            color: white;
+            background-color: $main-color;
+        }
+    }
+}
