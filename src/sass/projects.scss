@@ -36,3 +36,12 @@
         }
     }
 }
+
+button , .btn{
+    &:active , 
+    &:focus{
+        outline: none !important;
+        box-shadow: none !important;
+      }
+}
+  

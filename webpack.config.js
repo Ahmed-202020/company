@@ -6,7 +6,7 @@ module.exports = {
     entry: './src/js/index.js',
     output: {
         path: path.resolve(__dirname, 'build'),
-        publicPath: '/',
+        publicPath: './',
         filename: 'js/bundle.js'
     },
     module: {
@@ -36,7 +36,7 @@ module.exports = {
                     {
                     loader: 'file-loader',
                         options: {
-                            name:'[path][name].[ext]',
+                            name:'[name].[ext]',
                             outputPath: 'images',
                           
                         }
@@ -50,7 +50,7 @@ module.exports = {
                 {
                 loader: 'file-loader',
                     options: {
-                        name:'[path][name].[ext]',
+                        name:'[name].[ext]',
                         outputPath: 'fonts',
                       
                     }
@@ -81,6 +81,10 @@ module.exports = {
             template: "./src/projects.html",
             filename: "projects.html",
             }),
+            new HtmlWebpackPlugin({
+                template: "./src/project-details.html",
+                filename: "project-details.html",
+                }),
         new MiniCssExtractPlugin({filename: "css/style.css"}),
     ],
     devServer: {

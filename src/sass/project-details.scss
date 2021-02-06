@@ -1,0 +1,40 @@
+@import "./variable";
+
+button , .btn{
+    &:active , 
+    &:focus{
+        outline: none !important;
+        box-shadow: none !important;
+      }
+}
+  
+#image-gallery{
+    .modal-footer{ 
+        display: block;
+    }
+}
+
+.thumb{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.project-details{
+    .card{
+        .card-body{
+            .card-title{
+                font-weight: 800;
+                color: $main-color;
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .project-details{
+        .thumb{
+            margin-right:15px;
+            margin-left: 15px;
+        }
+    }
+}
