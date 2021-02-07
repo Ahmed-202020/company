@@ -1,0 +1,32 @@
+@import "./variable";
+
+.banner-blog{
+    #banner-img{
+        background-image: url(../images/banner-blog.jpg);
+    }
+}
+
+.posts{
+    .search-box{
+        padding: 20px;
+        margin-top: 5px;
+        box-shadow: 0px 1px 1px 1px $custom-color;
+        border: 1px solid  $custom-color;
+    }
+    .form-control{
+        &:focus{
+            box-shadow: none;
+            border-color:  $custom-color;
+        }
+    }
+    .card{
+        .card-body{
+            .card-text{
+                white-space: nowrap;
+                overflow:hidden ;
+                text-overflow: ellipsis;
+                color: $card-text-color;
+            }
+        }
+    }
+}    

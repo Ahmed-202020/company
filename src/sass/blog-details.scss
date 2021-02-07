@@ -1,0 +1,51 @@
+@import "./variable";
+
+.posts-details{
+    .card{
+        .card-body{
+            .card-title{
+                color: $main-color;
+                font-weight: 800;
+            }
+            .card-text{
+                color: $card-text-color;
+            }
+        }
+    }
+    .post-share{
+        color: $main-color;
+    }
+    .one-social{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        color: $card-text-color;
+        width: 45px;
+        height: 45px;
+        border-radius: 3px;
+        border: 1px solid $card-text-color;
+        margin-left: 10px;
+    }
+    .facebook-social{
+        &:hover,
+        &:focus{
+                color: #fff;
+                background-color: #385998;
+        }
+    }
+    .twitter-social{
+        &:hover,
+        &:focus{
+            color: #fff;
+            background-color: #1da1f2;
+        }
+    }
+    .linkedin-social{
+        &:hover,
+        &:focus{
+            color: #fff;
+            background-color: #0077b0;
+        }
+    }
+}
