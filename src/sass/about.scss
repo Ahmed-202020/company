@@ -1,0 +1,56 @@
+@import "./variable";
+
+.about-banner{
+   #banner-img{
+    background-image: url(../images/banner-about.jpg);
+   }
+}
+.our-team{
+    .card{
+        .card-body{
+            .our-team-line{
+                width: 10%;
+                border-top-color:$main-color ;
+            }
+            .card-text{
+                font-size: 14px;
+                margin: 14px 0;
+                font-weight: 600;
+                color: $card-text-color;
+            }
+            .social-about{
+                .one-social{
+                display: inline-block;
+                    color: $card-text-color;
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    border-radius: 3px;
+                    border: 1px solid $card-text-color;
+                    margin-left: 10px;
+                }
+                .facebook-social{
+                    &:hover,
+                    &:focus{
+                            color: #fff;
+                            background-color: #385998;
+                    }
+                }
+                .twitter-social{
+                    &:hover,
+                    &:focus{
+                        color: #fff;
+                        background-color: #1da1f2;
+                    }
+                }
+                .linkedin-social{
+                    &:hover,
+                    &:focus{
+                        color: #fff;
+                        background-color: #0077b0;
+                    }
+                }
+            }
+        }    
+    }
+}

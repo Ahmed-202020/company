@@ -3,6 +3,7 @@
 @import "./blog.scss";
 @import "./blog-details.scss";
 @import "./add-blog.scss";
+@import "./about.scss";
 @import "./variable";
 
 @font-face {
@@ -11,7 +12,6 @@
 }
 body{
     font-family: "cairofont" , Calibri, Arial ,Segoe UI, Trebuchet MS, Consolas, Tahoma;
-    font-size: 20px;
 }
 html,body{
     overflow-x: hidden;
