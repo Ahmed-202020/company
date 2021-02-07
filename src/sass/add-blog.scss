@@ -1,0 +1,9 @@
+@import "./variable";
+.add-blog {
+    label{
+        &:first-child{
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+}
