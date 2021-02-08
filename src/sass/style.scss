@@ -4,6 +4,7 @@
 @import "./blog-details.scss";
 @import "./add-blog.scss";
 @import "./about.scss";
+@import "./contact.scss";
 @import "./variable";
 
 @font-face {
@@ -216,7 +217,6 @@ html,body{
         }
     }
 }
-
 @media (max-width: 991.98px) {
      .top-menu{
          .navbar{

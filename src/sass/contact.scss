@@ -1,0 +1,62 @@
+@import "./variable";
+
+.contact-banner{
+    #banner-img{
+        background-image: url(../images/banner-contact.jpg);
+        background-size:cover ;
+    }
+}
+
+.one-social{
+    display: inline-block;
+    color: $card-text-color;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 3px;
+    text-align: center;
+    border: 1px solid $card-text-color;
+    margin-left: 10px;
+}
+
+.facebook-social{
+    &:hover,
+    &:focus{
+            color: #fff;
+            background-color: #385998;
+    }
+}
+.twitter-social{
+    &:hover,
+    &:focus{
+        color: #fff;
+        background-color: #1da1f2;
+    }
+}
+.linkedin-social{
+    &:hover,
+    &:focus{
+        color: #fff;
+        background-color: #0077b0;
+    }
+}
+
+.contact-us{
+    #contact-info{
+       svg{
+            color: $main-color;
+            margin-left: 5px;
+        }
+    }
+    input[type = "email"]{
+        text-align: right;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .contact-us{
+        .contact-header{
+            margin-top: 50px;
+        }
+    }
+}
