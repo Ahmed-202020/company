@@ -33,6 +33,10 @@ html,body{
                     border-bottom:1px solid $main-color;
                 }
             }
+            .active a{
+                color: $main-color;
+                border-bottom: 1px solid $main-color;
+            }
         }
     }
 }    

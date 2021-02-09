@@ -81,6 +81,18 @@ $(".custom-file-input").on("change", function() {
   $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
 });
 
+var pathName = window.location.pathname  //Bring the path which we in it
+console.log(pathName);
+
+$('.navbar-nav > li > a[href ="'+ pathName + '"] ').parent().addClass("active");
+
+if(pathName == "/blog-details.html" || pathName == "/add-blog.html"){
+  $('.navbar-nav > li > a[href = "/blog.html"]').parent().addClass("active");
+}
+
+if(pathName == "/project-details.html"){
+  $('.navbar-nav > li > a[href = "/projects.html"]').parent().addClass("active");
+}
 
 
 
